@@ -97,21 +97,35 @@ export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
             name: 'Python SDK',
             icon: <PythonIcon className={styles.sdk_color_icon} />,
             href: 'https://github.com/opq-osc/botoy',
+            desc: 'OPQ/IOTQQ/IOTBot的一个Python开发助手🐌',
           },
           {
             name: 'Golang SDK',
             icon: <GolangIcon className={styles.sdk_color_icon} />,
             href: 'https://github.com/opq-osc/OPQBot',
+            desc: '完全异步，自带队列，而且可以编译出二进制文件的框架。',
           },
           {
             name: 'Nodejs SDK',
             icon: <NodejsIcon className={styles.sdk_color_icon} />,
             href: 'https://github.com/opq-osc/IOTBOT-Node.js',
+            desc: 'IOTBOT，Nodejs版',
           },
           {
             name: 'C# SDK',
             icon: <CsharpIcon className={styles.sdk_color_icon} />,
-            href: 'https://github.com/opq-osc/OPQBot-Native',
+            href: [
+              {
+                name: 'MeowIOTBot',
+                link: 'https://github.com/opq-osc/MeowIOTBot',
+                desc: 'IOT Bot Structure For Enterprise Developer',
+              },
+              {
+                name: 'OPQBot-Native',
+                link: 'https://github.com/opq-osc/OPQBot-Native',
+                desc: 'OPQBot 酷Q插件 兼容框架',
+              },
+            ],
           },
         ],
       },

@@ -13,9 +13,17 @@ export interface IDataCard {
   link: string
 }
 
+export interface IDataFooterLinkChildHrefMulti {
+  link: string
+  desc: string
+  name: string
+}
+
+export type DataFooterLinkChildHref = string | IDataFooterLinkChildHrefMulti[]
+
 export interface IDataFooterLinkChild {
   name: string
-  href: string
+  href: DataFooterLinkChildHref
   icon?: ReactNode
   desc?: string
 }
