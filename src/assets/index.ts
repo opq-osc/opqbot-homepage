@@ -1,0 +1,10 @@
+export { default as CorrectIcon } from './icons/correct.svg'
+export { default as RainbowIcon } from './icons/rainbow.svg'
+export { default as PythonIcon } from './icons/python.svg'
+export { default as GolangIcon } from './icons/golang.svg'
+export { default as NodejsIcon } from './icons/nodejs.svg'
+export { default as CsharpIcon } from './icons/csharp.svg'
+export { default as TelegramIcon } from './icons/telegram.svg'
+export { default as GitterIcon } from './icons/gitter.svg'
+
+export { MultiLangIcon } from './MultiLangIcon'

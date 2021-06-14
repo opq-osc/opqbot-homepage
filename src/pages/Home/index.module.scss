@@ -1,0 +1,40 @@
+.base {
+    overflow: hidden;
+    position: relative;
+}
+
+.full_page {
+    height: 100vh;
+    width: 100%;
+
+    @extend .base;
+}
+
+.first_page {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafbfd;
+
+    @extend .full_page;
+}
+
+.dashboard {
+    background-color: #fff;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .1);
+
+    @extend .full_page;
+}
+
+.osc {
+    background-color: #fafbfd;
+
+    @extend .full_page;
+}
+
+.footer {
+    background-color: #000;
+    width: 100%;
+    box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, .1);
+
+    @extend .base;
+}

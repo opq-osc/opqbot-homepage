@@ -1,0 +1,67 @@
+.header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_right {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo {
+    color: rgba(0, 0, 0, .85);
+    font-size: 20px;
+    font-weight: 470;
+    margin-left: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu {
+    border: none;
+    margin-right: 20px;
+    font-size: 14px;
+    background-color: inherit;
+    flex-wrap: wrap;
+
+    &_item {
+        padding: 0 25px !important;
+    }
+}
+
+.github {
+
+    &_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 50%;
+        transition: all .3s linear;
+        padding: 7px;
+        user-select: none;
+        cursor: pointer;
+        margin-right: 20px;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .05);
+        }
+
+        &:active {
+            background-color: rgba(0, 0, 0, .3);
+        }
+    }
+
+    &_icon {
+        color: #000;
+
+        :global {
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

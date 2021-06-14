@@ -1,0 +1,64 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.talk {
+    display: flex;
+    align-items: center;
+
+    &+& {
+        margin-top: 35px;
+    }
+}
+
+.avatar {
+    flex-shrink: 0;
+}
+
+.text {
+    padding: 7px 13px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 8px 24px rgba(149, 157, 165, .2));
+    transform: translateY(-2px);
+
+    &::before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        border-radius: 5px;
+        border: 10px solid transparent;
+        border-left-color: #fff;
+        transform: rotate(-90deg);
+    }
+
+    $offset: -6px;
+
+    &_triangle {
+        &_left {
+            &::before {
+                left: $offset;
+            }
+        }
+
+        &_right {
+            &::before {
+                right: $offset;
+            }
+        }
+    }
+
+}
+
+.j_tooltip {
+    :global {
+        .ant-tooltip-inner {
+            min-width: max-content;
+        }
+    }
+}
