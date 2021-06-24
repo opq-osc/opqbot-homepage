@@ -151,12 +151,12 @@ export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
         child: [
           {
             name: 'OPQ Helper',
-            href: 'https://docs.opqbot.com/other/docs.opqbot.com',
+            href: 'https://docs.opqbot.com',
             icon: <BarsOutlined />,
           },
           {
             name: 'OPQBot Wiki',
-            href: 'https://docs.opqbot.com/other/go.opqbot.com',
+            href: 'https://go.opqbot.com',
             icon: <TagOutlined />,
           },
         ],
