@@ -7,7 +7,7 @@ import { REVEAL_CLASS } from '@constants/index'
 
 export const OSCPage: FC = () => {
   return (
-    <div className={cx(styles.wrapper, 'flex-gap-not-supported')}>
+    <div className={styles.wrapper}>
       <div className={styles.cards}>
         {text.cards.map((item, index) => (
           <Card
