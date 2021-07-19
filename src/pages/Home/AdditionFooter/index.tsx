@@ -9,7 +9,7 @@ import { IDataFooterLinkChildHrefMulti } from '@data/type'
 
 export const AdditionFooter: FC = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={cx(styles.wrapper, 'flex-gap-not-supported')}>
       <div className={styles.content}>
         {text.footer.links.map((link, index) => {
           return (

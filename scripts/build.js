@@ -42,7 +42,9 @@ const needCssPolyfillChunkIds = ['main']
        * 主要是针对手机端，后面手机浏览器内核升级了可以去掉
        * @refer https://caniuse.com/flexbox-gap
        */
-      require('flex-gap-polyfill'),
+      require('flex-gap-polyfill')({
+        flexGapNotSupported: '.flex-gap-not-supported',
+      }),
       // 压缩用
       require('cssnano')({
         preset: 'default',
