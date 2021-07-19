@@ -2588,7 +2588,7 @@ ansi-colors@^4.1.1:
   resolved "https://registry.nlark.com/ansi-colors/download/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
   integrity sha1-y7muJWv3UK8eqzRPIpqif+lLo0g=
 
-ansi-escapes@^4.2.1, ansi-escapes@^4.3.1:
+ansi-escapes@^4.2.1, ansi-escapes@^4.3.0, ansi-escapes@^4.3.1:
   version "4.3.2"
   resolved "https://registry.npm.taobao.org/ansi-escapes/download/ansi-escapes-4.3.2.tgz#6b2291d1db7d98b6521d5f1efa42d0f3a9feb65e"
   integrity sha1-ayKR0dt9mLZSHV8e+kLQ86n+tl4=
@@ -3688,6 +3688,21 @@ clean-stack@^2.0.0:
   resolved "https://registry.nlark.com/clean-stack/download/clean-stack-2.2.0.tgz?cache=0&sync_timestamp=1621915054928&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fclean-stack%2Fdownload%2Fclean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"
   integrity sha1-7oRy27Ep5yezHooQpCfe6d/kAIs=
 
+cli-cursor@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/cli-cursor/download/cli-cursor-3.1.0.tgz#264305a7ae490d1d03bf0c9ba7c925d1753af307"
+  integrity sha1-JkMFp65JDR0Dvwybp8kl0XU68wc=
+  dependencies:
+    restore-cursor "^3.1.0"
+
+cli-truncate@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.nlark.com/cli-truncate/download/cli-truncate-2.1.0.tgz#c39e28bf05edcde5be3b98992a22deed5a2b93c7"
+  integrity sha1-w54ovwXtzeW+O5iZKiLe7Vork8c=
+  dependencies:
+    slice-ansi "^3.0.0"
+    string-width "^4.2.0"
+
 cliui@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npm.taobao.org/cliui/download/cliui-5.0.0.tgz#deefcfdb2e800784aa34f46fa08e06851c7bbbc5"
@@ -3814,7 +3829,7 @@ commander@^6.2.0:
   resolved "https://registry.nlark.com/commander/download/commander-6.2.1.tgz?cache=0&sync_timestamp=1622954391928&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcommander%2Fdownload%2Fcommander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha1-B5LraC37wyWZm7K4T93duhEKxzw=
 
-commander@^7.1.0:
+commander@^7.1.0, commander@^7.2.0:
   version "7.2.0"
   resolved "https://registry.nlark.com/commander/download/commander-7.2.0.tgz?cache=0&sync_timestamp=1624609539421&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcommander%2Fdownload%2Fcommander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
   integrity sha1-o2y1fQtQHOEI5NIFWaFQo5HZerc=
@@ -4904,7 +4919,7 @@ enhanced-resolve@^4.3.0:
     memory-fs "^0.5.0"
     tapable "^1.0.0"
 
-enquirer@^2.3.5:
+enquirer@^2.3.5, enquirer@^2.3.6:
   version "2.3.6"
   resolved "https://registry.npm.taobao.org/enquirer/download/enquirer-2.3.6.tgz#2a7fe5dd634a1e4125a975ec994ff5456dc3734d"
   integrity sha1-Kn/l3WNKHkElqXXsmU/1RW3Dc00=
@@ -5362,7 +5377,7 @@ execa@^4.0.0:
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
-execa@^5.1.1:
+execa@^5.0.0, execa@^5.1.1:
   version "5.1.1"
   resolved "https://registry.nlark.com/execa/download/execa-5.1.1.tgz#f80ad9cbf4298f7bd1d4c9555c21e93741c411dd"
   integrity sha1-+ArZy/Qpj3vR1MlVXCHpN0HEEd0=
@@ -6830,6 +6845,11 @@ is-typedarray@^1.0.0:
   resolved "https://registry.nlark.com/is-typedarray/download/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
   integrity sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=
 
+is-unicode-supported@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.nlark.com/is-unicode-supported/download/is-unicode-supported-0.1.0.tgz?cache=0&sync_timestamp=1625294161966&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fis-unicode-supported%2Fdownload%2Fis-unicode-supported-0.1.0.tgz#3f26c76a809593b52bfa2ecb5710ed2779b522a7"
+  integrity sha1-PybHaoCVk7Ur+i7LVxDtJ3m1Iqc=
+
 is-url-superb@^4.0.0:
   version "4.0.0"
   resolved "https://registry.nlark.com/is-url-superb/download/is-url-superb-4.0.0.tgz#b54d1d2499bb16792748ac967aa3ecb41a33a8c2"
@@ -7571,6 +7591,40 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npm.taobao.org/lines-and-columns/download/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
+lint-staged@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.nlark.com/lint-staged/download/lint-staged-11.0.1.tgz?cache=0&sync_timestamp=1626166320438&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flint-staged%2Fdownload%2Flint-staged-11.0.1.tgz#1b8ae8ed5a52ed87252db95fe008c2618c85f55a"
+  integrity sha1-G4ro7VpS7YclLblf4AjCYYyF9Vo=
+  dependencies:
+    chalk "^4.1.1"
+    cli-truncate "^2.1.0"
+    commander "^7.2.0"
+    cosmiconfig "^7.0.0"
+    debug "^4.3.1"
+    dedent "^0.7.0"
+    enquirer "^2.3.6"
+    execa "^5.0.0"
+    listr2 "^3.8.2"
+    log-symbols "^4.1.0"
+    micromatch "^4.0.4"
+    normalize-path "^3.0.0"
+    please-upgrade-node "^3.2.0"
+    string-argv "0.3.1"
+    stringify-object "^3.3.0"
+
+listr2@^3.8.2:
+  version "3.10.0"
+  resolved "https://registry.nlark.com/listr2/download/listr2-3.10.0.tgz#58105a53ed7fa1430d1b738c6055ef7bb006160f"
+  integrity sha1-WBBaU+1/oUMNG3OMYFXve7AGFg8=
+  dependencies:
+    cli-truncate "^2.1.0"
+    colorette "^1.2.2"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rxjs "^6.6.7"
+    through "^2.3.8"
+    wrap-ansi "^7.0.0"
+
 load-json-file@^4.0.0:
   version "4.0.0"
   resolved "https://registry.nlark.com/load-json-file/download/load-json-file-4.0.0.tgz#2f5f45ab91e33216234fd53adab668eb4ec0993b"
@@ -7697,6 +7751,24 @@ lodash.uniq@^4.5.0:
   version "4.17.21"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
+
+log-symbols@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npm.taobao.org/log-symbols/download/log-symbols-4.1.0.tgz#3fbdbb95b4683ac9fc785111e792e558d4abd503"
+  integrity sha1-P727lbRoOsn8eFER55LlWNSr1QM=
+  dependencies:
+    chalk "^4.1.0"
+    is-unicode-supported "^0.1.0"
+
+log-update@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/log-update/download/log-update-4.0.0.tgz#589ecd352471f2a1c0c570287543a64dfd20e0a1"
+  integrity sha1-WJ7NNSRx8qHAxXAodUOmTf0g4KE=
+  dependencies:
+    ansi-escapes "^4.3.0"
+    cli-cursor "^3.1.0"
+    slice-ansi "^4.0.0"
+    wrap-ansi "^6.2.0"
 
 loglevel@^1.6.8:
   version "1.7.1"
@@ -7888,7 +7960,7 @@ micromatch@^3.1.10, micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-micromatch@^4.0.2:
+micromatch@^4.0.2, micromatch@^4.0.4:
   version "4.0.4"
   resolved "https://registry.npm.taobao.org/micromatch/download/micromatch-4.0.4.tgz?cache=0&sync_timestamp=1618054842871&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmicromatch%2Fdownload%2Fmicromatch-4.0.4.tgz#896d519dfe9db25fce94ceb7a500919bf881ebf9"
   integrity sha1-iW1Rnf6dsl/OlM63pQCRm/iB6/k=
@@ -8845,6 +8917,13 @@ pkg-up@^2.0.0:
   integrity sha1-yBmscoBZpGHKscOImivjxJoATX8=
   dependencies:
     find-up "^2.1.0"
+
+please-upgrade-node@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npm.taobao.org/please-upgrade-node/download/please-upgrade-node-3.2.0.tgz#aeddd3f994c933e4ad98b99d9a556efa0e2fe942"
+  integrity sha1-rt3T+ZTJM+StmLmdmlVu+g4v6UI=
+  dependencies:
+    semver-compare "^1.0.0"
 
 pnp-webpack-plugin@1.6.4:
   version "1.6.4"
@@ -10844,6 +10923,14 @@ resolve@^2.0.0-next.3:
     is-core-module "^2.2.0"
     path-parse "^1.0.6"
 
+restore-cursor@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/restore-cursor/download/restore-cursor-3.1.0.tgz#39f67c54b3a7a58cea5236d95cf0034239631f7e"
+  integrity sha1-OfZ8VLOnpYzqUjbZXPADQjljH34=
+  dependencies:
+    onetime "^5.1.0"
+    signal-exit "^3.0.2"
+
 ret@~0.1.10:
   version "0.1.15"
   resolved "https://registry.nlark.com/ret/download/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
@@ -10957,6 +11044,13 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   integrity sha1-6Eg5bwV9Ij8kOGkkYY4laUFh7Ec=
   dependencies:
     aproba "^1.1.1"
+
+rxjs@^6.6.7:
+  version "6.6.7"
+  resolved "https://registry.nlark.com/rxjs/download/rxjs-6.6.7.tgz?cache=0&sync_timestamp=1625506834622&other_urls=https%3A%2F%2Fregistry.nlark.com%2Frxjs%2Fdownload%2Frxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
+  integrity sha1-kKwBisq/SRv2UEQjXVhjxNq4BMk=
+  dependencies:
+    tslib "^1.9.0"
 
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
@@ -11100,6 +11194,11 @@ selfsigned@^1.10.8:
   integrity sha1-JJKc2Qb+D0S20B+yOZmnOVN6y+k=
   dependencies:
     node-forge "^0.10.0"
+
+semver-compare@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.nlark.com/semver-compare/download/semver-compare-1.0.0.tgz#0dee216a1c941ab37e9efb1788f6afc5ff5537fc"
+  integrity sha1-De4hahyUGrN+nvsXiPavxf9VN/w=
 
 "semver@2 || 3 || 4 || 5", semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
   version "5.7.1"
@@ -11300,6 +11399,15 @@ slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/slash/download/slash-3.0.0.tgz?cache=0&sync_timestamp=1618384508676&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fslash%2Fdownload%2Fslash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha1-ZTm+hwwWWtvVJAIg2+Nh8bxNRjQ=
+
+slice-ansi@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/slice-ansi/download/slice-ansi-3.0.0.tgz?cache=0&sync_timestamp=1618554953055&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fslice-ansi%2Fdownload%2Fslice-ansi-3.0.0.tgz#31ddc10930a1b7e0b67b08c96c2f49b77a789787"
+  integrity sha1-Md3BCTCht+C2ewjJbC9Jt3p4l4c=
+  dependencies:
+    ansi-styles "^4.0.0"
+    astral-regex "^2.0.0"
+    is-fullwidth-code-point "^3.0.0"
 
 slice-ansi@^4.0.0:
   version "4.0.0"
@@ -11578,6 +11686,11 @@ strict-uri-encode@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/strict-uri-encode/download/strict-uri-encode-1.1.0.tgz#279b225df1d582b1f54e65addd4352e18faa0713"
   integrity sha1-J5siXfHVgrH1TmWt3UNS4Y+qBxM=
+
+string-argv@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.npm.taobao.org/string-argv/download/string-argv-0.3.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstring-argv%2Fdownload%2Fstring-argv-0.3.1.tgz#95e2fbec0427ae19184935f816d74aaa4c5c19da"
+  integrity sha1-leL77AQnrhkYSTX4FtdKqkxcGdo=
 
 string-convert@^0.2.0:
   version "0.2.1"
@@ -11995,7 +12108,7 @@ through2@^4.0.0:
   dependencies:
     readable-stream "3"
 
-"through@>=2.2.7 <3":
+"through@>=2.2.7 <3", through@^2.3.8:
   version "2.3.8"
   resolved "https://registry.nlark.com/through/download/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
@@ -12125,7 +12238,7 @@ tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^1.8.1:
+tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.nlark.com/tslib/download/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=

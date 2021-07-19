@@ -62,6 +62,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "execa": "^5.1.1",
     "husky": "^6.0.0",
+    "lint-staged": "^11.0.1",
     "postcss": "^8.3.5",
     "prettier": "^2.3.1",
     "react-refresh": "^0.10.0",
@@ -86,5 +87,13 @@
     "/node_modules",
     "/public"
   ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier -c --write"
+    ]
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "license": "MIT"
 }
