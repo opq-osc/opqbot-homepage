@@ -4,7 +4,7 @@
     "chunk-libs.js": "/static/js/chunk-libs.68920f8d.js",
     "chunk-react.js": "/static/js/chunk-react.ba321d0f.js",
     "main.css": "/static/css/main.a3c0c2eb.css",
-    "main.js": "/static/js/main.3862cb44.js",
+    "main.js": "/static/js/main.6bfbbc01.js",
     "runtime-main.js": "/static/js/runtime-main.babfe28b.js",
     "index.html": "/index.html",
     "static/media/avatar.4da1e0a3.jpeg": "/static/media/avatar.4da1e0a3.jpeg"
@@ -15,6 +15,6 @@
     "static/css/chunk-libs.5551e668.css",
     "static/js/chunk-libs.68920f8d.js",
     "static/css/main.a3c0c2eb.css",
-    "static/js/main.3862cb44.js"
+    "static/js/main.6bfbbc01.js"
   ]
 }
