@@ -121,6 +121,11 @@ export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
                 desc: 'IOT Bot Structure For Enterprise Developer',
               },
               {
+                name: 'YukinoshitaBot.OPQ',
+                link: 'https://github.com/opq-osc/YukinoshitaBot.OPQ',
+                desc: 'A c#/.net sdk for OPQ bot',
+              },
+              {
                 name: 'OPQBot-Native',
                 link: 'https://github.com/opq-osc/OPQBot-Native',
                 desc: 'OPQBot 酷Q插件 兼容框架',
