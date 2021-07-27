@@ -69,6 +69,7 @@ export const AutoTalkCom: FC = () => {
                 type: 'spring',
               },
             }}
+            key={item.avatar}
           >
             {talkElm}
           </motion.div>
