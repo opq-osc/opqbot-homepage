@@ -26,6 +26,7 @@ export interface IDataFooterLinkChild {
   href: DataFooterLinkChildHref
   icon?: ReactNode
   desc?: string
+  additionalProps?: any
 }
 
 export interface IDataFooterLink {

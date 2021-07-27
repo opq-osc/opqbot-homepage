@@ -18,10 +18,13 @@ import {
   CommentOutlined,
   BulbOutlined,
   UsergroupAddOutlined,
+  TwitterOutlined,
+  FacebookOutlined,
 } from '@ant-design/icons'
 import { Button } from 'antd'
 import { IData } from './type'
 import { OPQ_DOC_SITE, OPQ_REPO, OPQ_OSC_LINK, OPQ_WIKI } from './constants'
+import { color } from '../constants/color'
 
 export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
   footer: {
@@ -163,6 +166,40 @@ export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
             name: 'OPQBot Wiki',
             href: 'https://go.opqbot.com',
             icon: <TagOutlined />,
+          },
+        ],
+      },
+      {
+        title: '分享站点',
+        child: [
+          {
+            name: 'Twitter',
+            href: '',
+            icon: <TwitterOutlined style={{ color: color.twitterBlue }} />,
+            additionalProps: {
+              'data-social': 'twitter',
+            },
+          },
+          {
+            name: 'Facebook',
+            href: '',
+            icon: <FacebookOutlined style={{ color: color.facebook }} />,
+            additionalProps: {
+              'data-social': 'facebook',
+            },
+          },
+          {
+            name: 'Telegram',
+            href: '',
+            icon: (
+              <TelegramIcon
+                className={styles.gitter_icon}
+                style={{ color: color.telegram }}
+              />
+            ),
+            additionalProps: {
+              'data-social': 'telegram',
+            },
           },
         ],
       },

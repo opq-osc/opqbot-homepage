@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import styles from './index.module.scss'
 import { text } from '@data/index'
 import { Button, Popover, ButtonProps } from 'antd'
@@ -8,6 +8,11 @@ import { isString } from 'lodash'
 import { IDataFooterLinkChildHrefMulti } from '@data/type'
 
 export const AdditionFooter: FC = () => {
+  // restart googshare.js init
+  useEffect(() => {
+    window._goodshare?.reNewAllInstance?.()
+  }, [])
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
@@ -35,7 +40,7 @@ export const AdditionFooter: FC = () => {
                           ? item.desc
                           : (item.href as IDataFooterLinkChildHrefMulti[]).map(
                               (item) => (
-                                <div>
+                                <div key={item.name}>
                                   <Button
                                     type="link"
                                     target="_blank"
@@ -60,6 +65,7 @@ export const AdditionFooter: FC = () => {
                         icon={item.icon}
                         className={styles.link_btn}
                         title={item.name}
+                        {...item.additionalProps}
                       >
                         {item.name}
                       </Button>
