@@ -6,5 +6,6 @@ export { default as NodejsIcon } from './icons/nodejs.svg'
 export { default as CsharpIcon } from './icons/csharp.svg'
 export { default as TelegramIcon } from './icons/telegram.svg'
 export { default as GitterIcon } from './icons/gitter.svg'
+export { default as LuaIcon } from './icons/lua.svg'
 
 export { MultiLangIcon } from './MultiLangIcon'

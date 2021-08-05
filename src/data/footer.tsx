@@ -5,6 +5,7 @@ import {
   CsharpIcon,
   GitterIcon,
   TelegramIcon,
+  LuaIcon,
 } from '@assets/index'
 import styles from './index.module.scss'
 import {
@@ -99,20 +100,35 @@ export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
           {
             name: 'Python SDK',
             icon: <PythonIcon className={styles.sdk_color_icon} />,
-            href: 'https://github.com/opq-osc/botoy',
-            desc: 'OPQ/IOTQQ/IOTBot的一个Python开发助手🐌',
+            href: [
+              {
+                name: 'botoy',
+                link: 'https://github.com/opq-osc/botoy',
+                desc: 'OPQ/IOTQQ/IOTBot的一个Python开发助手🐌',
+              },
+            ],
           },
           {
             name: 'Golang SDK',
             icon: <GolangIcon className={styles.sdk_color_icon} />,
-            href: 'https://github.com/opq-osc/OPQBot',
-            desc: '完全异步，自带队列，而且可以编译出二进制文件的框架。',
+            href: [
+              {
+                name: 'OPQBot',
+                link: 'https://github.com/opq-osc/OPQBot',
+                desc: '完全异步，自带队列，而且可以编译出二进制文件的框架。',
+              },
+            ],
           },
           {
             name: 'Nodejs SDK',
             icon: <NodejsIcon className={styles.sdk_color_icon} />,
-            href: 'https://github.com/opq-osc/IOTBOT-Node.js',
-            desc: 'IOTBOT，Nodejs版',
+            href: [
+              {
+                name: 'OPQ-NodeJs',
+                link: 'https://github.com/opq-osc/OPQ-NodeJs',
+                desc: 'OPQ-NodeJs',
+              },
+            ],
           },
           {
             name: 'C# SDK',
@@ -132,6 +148,17 @@ export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
                 name: 'OPQBot-Native',
                 link: 'https://github.com/opq-osc/OPQBot-Native',
                 desc: 'OPQBot 酷Q插件 兼容框架',
+              },
+            ],
+          },
+          {
+            name: 'Lua SDK',
+            icon: <LuaIcon className={styles.sdk_color_icon} />,
+            href: [
+              {
+                name: 'lua-lib',
+                link: 'https://github.com/opq-osc/lua-lib',
+                desc: '进一步封装 OPQ 的 lua api，调用更统一，简化开发，去除插件冗余代码, 免受 OPQ wiki 的困扰',
               },
             ],
           },
