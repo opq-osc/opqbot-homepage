@@ -6,6 +6,7 @@ import cx from 'classnames'
 import { REVEAL_CLASS } from '@constants/index'
 import { isString } from 'lodash'
 import { IDataFooterLinkChildHrefMulti } from '@data/type'
+import { FooterWave } from './FooterWave'
 
 export const AdditionFooter: FC = () => {
   // restart googshare.js init
@@ -80,6 +81,7 @@ export const AdditionFooter: FC = () => {
       <div className={cx(styles.license, REVEAL_CLASS)}>
         {text.footer.license}
       </div>
+      <FooterWave />
     </div>
   )
 }
