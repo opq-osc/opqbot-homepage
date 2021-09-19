@@ -33,18 +33,10 @@ module.exports = {
       ].filter(Boolean),
     },
     configure: (webpackConfig, { env, paths }) => {
-
-      // 去除 chunk 的 '.chunk' 部分
-      webpackConfig.output.chunkFilename =
-        webpackConfig.output.chunkFilename.replace('.chunk', '')
-
       // 去除 console 和注释
       invade(webpackConfig.optimization.minimizer, 'TerserPlugin', (e) => {
         e.options.extractComments = false
         e.options.terserOptions.compress.drop_console = true
-      })
-      invade(webpackConfig.plugins, 'MiniCssExtractPlugin', (e) => {
-        e.options.chunkFilename = e.options.chunkFilename.replace('.chunk', '')
       })
 
       // 替换标题
