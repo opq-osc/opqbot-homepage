@@ -1,20 +1,20 @@
 {
   "files": {
-    "chunk-libs.css": "/static/css/chunk-libs.5551e668.css",
-    "chunk-libs.js": "/static/js/chunk-libs.a1bd2314.js",
-    "chunk-react.js": "/static/js/chunk-react.4c142994.js",
-    "main.css": "/static/css/main.dbb736a3.css",
-    "main.js": "/static/js/main.4a5c07cd.js",
-    "runtime-main.js": "/static/js/runtime-main.babfe28b.js",
-    "index.html": "/index.html",
-    "static/media/avatar.4da1e0a3.jpeg": "/static/media/avatar.4da1e0a3.jpeg"
+    "chunk-libs.css": "//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/static/css/chunk-libs.5551e668.chunk.css",
+    "chunk-libs.js": "//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/static/js/chunk-libs.8c98eeb8.chunk.js",
+    "chunk-react.js": "//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/static/js/chunk-react.4c142994.chunk.js",
+    "main.css": "//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/static/css/main.dbb736a3.chunk.css",
+    "main.js": "//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/static/js/main.4a5c07cd.chunk.js",
+    "runtime-main.js": "//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/static/js/runtime-main.9b3c4f9d.js",
+    "index.html": "//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/index.html",
+    "static/media/avatar.4da1e0a3.jpeg": "//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/static/media/avatar.4da1e0a3.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.babfe28b.js",
-    "static/js/chunk-react.4c142994.js",
-    "static/css/chunk-libs.5551e668.css",
-    "static/js/chunk-libs.a1bd2314.js",
-    "static/css/main.dbb736a3.css",
-    "static/js/main.4a5c07cd.js"
+    "static/js/runtime-main.9b3c4f9d.js",
+    "static/js/chunk-react.4c142994.chunk.js",
+    "static/css/chunk-libs.5551e668.chunk.css",
+    "static/js/chunk-libs.8c98eeb8.chunk.js",
+    "static/css/main.dbb736a3.chunk.css",
+    "static/js/main.4a5c07cd.chunk.js"
   ]
 }
