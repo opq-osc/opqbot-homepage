@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+// micro app
+import './plugins/registryMicroApp'
+
 // reset css
 import 'normalize.css/normalize.css'
 

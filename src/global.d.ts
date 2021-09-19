@@ -3,6 +3,7 @@ declare global {
     _goodshare?: {
       reNewAllInstance?: () => void
     }
+    qiankunStarted?: any
   }
 
   declare module '*.svg' {
