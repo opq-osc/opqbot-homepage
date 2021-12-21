@@ -1,9 +1,11 @@
 body {
   margin: 0;
-  font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
+    Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   /* scroll */
   scroll-behavior: smooth;
 }
@@ -11,6 +13,10 @@ body {
 /* scrollreveal 有 bug ！在这个地方 hack 下 */
 .j-scroll-reveal_ {
   visibility: hidden;
+}
+
+.j_version_for_github_force_change_cdn_file_hash {
+  opacity: 1;
 }
 
 code {
