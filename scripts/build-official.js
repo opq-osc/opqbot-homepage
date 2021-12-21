@@ -1,3 +1,7 @@
+/**
+ * @deprecated [2021-12-21]: 使用 iphone13 (ios 15) 测试已无兼容性问题，放弃使用此 hack 脚本
+ */
+
 const postcss = require('postcss')
 const fs = require('fs')
 const path = require('path')

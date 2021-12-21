@@ -6,7 +6,7 @@
   "description": "opqbot.com 主站页面",
   "scripts": {
     "dev": "node scripts/start.js",
-    "build": "node ./scripts/build-official.js",
+    "build": "yarn build:project",
     "build:project": "node scripts/build.js",
     "prebuild": "rimraf build",
     "build:preview": "serve -s build",
