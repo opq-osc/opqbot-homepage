@@ -12,11 +12,11 @@ opqbot.com 主站仓库
 
 ```bash
     # 安装 yarn
-    npm config set registry https://registry.npm.taobao.org
+    npm config set registry https://registry.npmmirror.com
     npm install -g yarn
 
     # 设定加速镜像
-    yarn config set registry https://registry.npm.taobao.org -g
+    yarn config set registry https://registry.npmmirror.com -g
     yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
 
     # 安装依赖

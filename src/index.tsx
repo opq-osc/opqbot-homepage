@@ -8,7 +8,7 @@ import './plugins/registryMicroApp'
 import 'normalize.css/normalize.css'
 
 // antd css
-import 'antd/dist/antd.css'
+import 'antd/dist/antd.min.css'
 
 // global css
 import './index.css'
