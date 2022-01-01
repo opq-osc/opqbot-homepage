@@ -7,31 +7,49 @@
     <link rel="dns-prefetch" href="//opqbot.com/" />
     <link rel="preconnect" href="//opqbot.com/" />
 
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net/" />
+    <link rel="preconnect" href="//cdn.jsdelivr.net/" />
+
     <!-- common -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="opq-osc" />
     <meta name="keyword" content="opq,opqbot,opq-osc,opqqq,机器人" />
-    <meta
-      name="description"
-      content="OPQBot是一个高效稳定迸发的跨平台AI机器人框架"
-    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
 
     <!-- twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta property="og:url" content="https://opqbot.com/" />
-    <meta property="og:title" content="OPQBot 跨平台机器人框架" />
+    <!-- Primary Meta Tags -->
+    <title>OPQBot - 高效稳定的跨平台机器人框架</title>
+    <meta name="title" content="OPQBot - 高效稳定的跨平台机器人框架" />
+    <meta
+      name="description"
+      content="OPQBot 是一个高效稳定迸发的跨平台 AI 机器人框架"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="OPQBot - 跨平台机器人框架" />
     <meta
       property="og:description"
       content="OPQBot 是一个高效稳定迸发的跨平台 AI 机器人框架"
     />
-    <meta property="og:image" content="https://docs.opqbot.com/avatar.jpeg" />
+    <meta property="og:image" content="%PUBLIC_URL%/opq.share.jpg" />
 
-    <!-- title -->
-    <title>OPQBot - 高效稳定的跨平台 AI 机器人框架</title>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="OPQBot - 跨平台机器人框架" />
+    <meta
+      property="twitter:description"
+      content="OPQBot 是一个高效稳定迸发的跨平台 AI 机器人框架"
+    />
+    <meta property="twitter:image" content="%PUBLIC_URL%/opq.share.jpg" />
 
     <% if (process.env.NODE_ENV === 'production') { %>
     <script src="https://cdn.jsdelivr.net/gh/fz6m/console-ban@3.2/dist/console-ban.min.js"></script>
