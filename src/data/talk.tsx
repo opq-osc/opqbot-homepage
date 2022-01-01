@@ -1,6 +1,6 @@
 import { IData } from './type'
 import img from '@assets/img/avatar.jpeg'
-import opqLogoUrl from '@assets/logo/opq.300.min.jpg'
+import opqLogoUrl from '@assets/logo/jpg/opq.300.min.jpg'
 
 export const TALK_CONFIG: Pick<IData, 'talk'> = {
   talk: [
