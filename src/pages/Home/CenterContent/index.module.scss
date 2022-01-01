@@ -1,60 +1,62 @@
 .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: default;
-    padding: 0 40px;
-    height: calc(100vh - 64px);
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  padding: 0 40px;
+  height: calc(100vh - 64px);
+  overflow: hidden;
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 
-    margin: {
-        left: 50px;
-        right: 50px;
-    }
+  margin: {
+    left: 50px;
+    right: 50px;
+  }
 
-    transform: translateY(-70px);
+  transform: translateY(-70px);
 
-    @media screen and (max-width: 768px) {
-        width: 100%;
-    }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .title {
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  position: relative;
+  font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
 }
 
 .desc {
-    font-size: 15px;
-    line-height: 27px;
+  font-size: 15px;
+  line-height: 27px;
 }
 
 .right {
-    width: 40%;
-    transform: translateY(-50%);
+  width: 40%;
+  transform: translateY(-50%);
 
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .btns {
-    display: flex;
-    margin-top: 30px;
-    align-items: center;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
 }
 
 .btn {
-    & + & {
-        margin-left: 15px;
-    }
+  & + & {
+    margin-left: 15px;
+  }
 }
