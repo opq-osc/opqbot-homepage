@@ -37,7 +37,10 @@
 .opq_logo {
   max-width: 100%;
   width: 80px;
-  transform: translateY(5px);
 
   @extend .none;
+
+  @media screen and (max-width: 768px) {
+    width: 60px;
+  }
 }
