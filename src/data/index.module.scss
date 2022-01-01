@@ -1,32 +1,43 @@
-
 .correct_icon {
-    transform: scale(1.5) translateY(-15%);
+  transform: scale(1.5) translateY(-15%);
 
-    @media screen and (max-width: 768px) {
-        transform: scale(.8) translateY(-15%);
-        margin-left: -10px;
-    }
+  @media screen and (max-width: 768px) {
+    transform: scale(0.8) translateY(-15%);
+    margin-left: -10px;
+  }
 }
 
 .gitter_icon {
-    width: 14px;
-    height: 14px;
-    margin-right: 9px;
-    fill: currentColor;
-    transform: translateY(2px);
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+  fill: currentColor;
+  transform: translateY(2px);
 }
 
 .osc_link {
-    color: #fff;
-    padding: 0;
+  color: #fff;
+  padding: 0;
 }
 
 .sdk_color_icon {
+  $size: 17px;
 
-    $size: 17px;
+  width: $size;
+  height: $size;
+  transform: translate(-2px, 3px);
+  margin-right: 5px;
+}
 
-    width: $size;
-    height: $size;
-    transform: translate(-2px, 3px);
-    margin-right: 5px;
+.none {
+  user-select: none;
+  pointer-events: none;
+}
+
+.opq_logo {
+  max-width: 100%;
+  width: 80px;
+  transform: translateY(5px);
+
+  @extend .none;
 }
