@@ -13,17 +13,13 @@ opqbot.com 主站仓库
 ```bash
     # 安装 yarn
     npm config set registry https://registry.npmmirror.com
-    npm install -g yarn
-
-    # 设定加速镜像
-    yarn config set registry https://registry.npmmirror.com -g
-    yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
+    npm install -g pnpm
 
     # 安装依赖
-    yarn
+    pnpm i
 
     # 启动项目
-    yarn dev
+    pnpm dev
 ```
 
 启动项目后即可在 `9527` 端口即时修订。
