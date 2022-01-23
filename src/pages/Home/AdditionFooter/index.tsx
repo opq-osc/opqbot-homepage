@@ -8,11 +8,9 @@ import { isString } from 'lodash'
 import { IDataFooterLinkChildHrefMulti } from '@data/type'
 import { FooterWave } from './FooterWave'
 
-import 'sharer.js'
-
 export const AdditionFooter: FC = () => {
   useEffect(() => {
-    window.Sharer?.init?.()
+    window._goodshare?.reNewAllInstance?.()
   }, [])
 
   return (
