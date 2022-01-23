@@ -25,3 +25,4 @@ yarn-error.log*
 
 # custom output webpack config file
 /config.json
+.swc
