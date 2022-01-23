@@ -33,6 +33,7 @@
     "react-intersection-observer": "^8.33.1",
     "react-wavify": "^1.5.4",
     "scrollreveal": "^4.0.9",
+    "sharer.js": "^0.5.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {

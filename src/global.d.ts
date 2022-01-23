@@ -1,7 +1,7 @@
 declare global {
   interface Window {
-    _goodshare?: {
-      reNewAllInstance?: () => void
+    Sharer?: {
+      init?: () => void
     }
     qiankunStarted?: any
   }

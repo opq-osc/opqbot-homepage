@@ -27,6 +27,7 @@ export interface IDataFooterLinkChild {
   icon?: ReactNode
   desc?: string
   additionalProps?: any
+  preventDefault?: boolean
 }
 
 export interface IDataFooterLink {

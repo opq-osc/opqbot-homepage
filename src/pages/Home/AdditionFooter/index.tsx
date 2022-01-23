@@ -8,10 +8,11 @@ import { isString } from 'lodash'
 import { IDataFooterLinkChildHrefMulti } from '@data/type'
 import { FooterWave } from './FooterWave'
 
+import 'sharer.js'
+
 export const AdditionFooter: FC = () => {
-  // restart googshare.js init
   useEffect(() => {
-    window._goodshare?.reNewAllInstance?.()
+    window.Sharer?.init?.()
   }, [])
 
   return (
@@ -67,6 +68,11 @@ export const AdditionFooter: FC = () => {
                         className={styles.link_btn}
                         title={item.name}
                         {...item.additionalProps}
+                        onClick={(e) => {
+                          if (item.preventDefault) {
+                            e.preventDefault()
+                          }
+                        }}
                       >
                         {item.name}
                       </Button>

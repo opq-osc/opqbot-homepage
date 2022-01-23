@@ -27,6 +27,12 @@ import { IData } from './type'
 import { OPQ_DOC_SITE, OPQ_REPO, OPQ_OSC_LINK, OPQ_WIKI } from './constants'
 import { color } from '../constants/color'
 
+const SHARE_PROPS: Record<string, string> = {
+  'data-url': `https://opqbot.com/`,
+  'data-hashtags': `opqbot, opq, bot`,
+  'data-title': `OPQBot - 跨平台机器人框架`,
+}
+
 export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
   footer: {
     license: (
@@ -204,16 +210,20 @@ export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
             href: '',
             icon: <TwitterOutlined style={{ color: color.twitterBlue }} />,
             additionalProps: {
-              'data-social': 'twitter',
+              'data-sharer': 'twitter',
+              ...SHARE_PROPS,
             },
+            preventDefault: true,
           },
           {
             name: 'Facebook',
             href: '',
             icon: <FacebookOutlined style={{ color: color.facebook }} />,
             additionalProps: {
-              'data-social': 'facebook',
+              'data-sharer': 'facebook',
+              ...SHARE_PROPS,
             },
+            preventDefault: true,
           },
           {
             name: 'Telegram',
@@ -225,8 +235,10 @@ export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
               />
             ),
             additionalProps: {
-              'data-social': 'telegram',
+              'data-sharer': 'telegram',
+              ...SHARE_PROPS,
             },
+            preventDefault: true,
           },
         ],
       },

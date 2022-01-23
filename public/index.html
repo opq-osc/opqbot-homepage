@@ -40,15 +40,23 @@
       content="OPQBot 是一个高效稳定迸发的跨平台 AI 机器人框架"
     />
     <meta property="og:image" content="%PUBLIC_URL%/opq.1200x630.v2.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://opqbot.com/" />
     <meta property="twitter:title" content="OPQBot - 跨平台机器人框架" />
     <meta
       property="twitter:description"
       content="OPQBot 是一个高效稳定迸发的跨平台 AI 机器人框架"
     />
+    <meta
+      property="twitter:image:src"
+      content="%PUBLIC_URL%/opq.1200x630.v2.jpg"
+    />
+    <meta property="twitter:image:width" content="1200" />
+    <meta property="twitter:image:height" content="630" />
 
     <% if (process.env.NODE_ENV === 'production') { %>
     <script src="https://cdn.jsdelivr.net/gh/fz6m/console-ban@3.2/dist/console-ban.min.js"></script>
@@ -86,7 +94,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
-    <script src="https://cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js"></script>
   </body>
 </html>
