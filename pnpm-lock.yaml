@@ -16,12 +16,10 @@ specifiers:
   '@types/scrollreveal': ^0.0.7
   '@types/styled-components': ^5.1.19
   '@typescript-eslint/parser': ^5.8.1
-  '@xn-sakina/meta': ^1.0.2
+  '@xn-sakina/meta': ^1.0.3
   antd: ^4.18.2
-  babel-plugin-lodash: ^3.3.4
   chalk: ^4.1.1
   classnames: ^2.3.1
-  core-js: 3.20.0
   cross-env: ^7.0.3
   eslint: ^8.6.0
   eslint-config-prettier: ^8.3.0
@@ -39,7 +37,6 @@ specifiers:
   only-allow: ^1.0.0
   prettier: ^2.5.1
   pretty-quick: ^3.1.3
-  process: ^0.11.10
   qiankun: ^2.6.3
   randomcolor: ^0.6.2
   react: ^17.0.2
@@ -57,13 +54,11 @@ dependencies:
   '@ant-design/icons': 4.7.0_react-dom@17.0.2+react@17.0.2
   antd: 4.18.2_react-dom@17.0.2+react@17.0.2
   classnames: 2.3.1
-  core-js: 3.20.0
   flex-gap-polyfill: 4.1.0
   framer-motion: 4.1.17_react-dom@17.0.2+react@17.0.2
   lodash: 4.17.21
   normalize.css: 8.0.1
   numeral: 2.0.6
-  process: 0.11.10
   qiankun: 2.6.3
   randomcolor: 0.6.2
   react: 17.0.2
@@ -90,8 +85,7 @@ devDependencies:
   '@types/scrollreveal': 0.0.7
   '@types/styled-components': 5.1.19
   '@typescript-eslint/parser': 5.8.1_eslint@8.6.0+typescript@4.5.4
-  '@xn-sakina/meta': 1.0.2_21f449c4d3ddcea9f03fbfde32d31c84
-  babel-plugin-lodash: 3.3.4
+  '@xn-sakina/meta': 1.0.3_eslint@8.6.0+typescript@4.5.4
   chalk: 4.1.2
   cross-env: 7.0.3
   eslint: 8.6.0
@@ -3431,16 +3425,13 @@ packages:
       webpack-dev-server: 4.7.3_webpack-cli@4.9.1+webpack@5.67.0
     dev: true
 
-  /@xn-sakina/meta/1.0.2_21f449c4d3ddcea9f03fbfde32d31c84:
+  /@xn-sakina/meta/1.0.3_eslint@8.6.0+typescript@4.5.4:
     resolution:
       {
-        integrity: sha512-LoAmtqeeYRkDnybM0PnxHQTMj7gmXGdCulIXICAtAhRy8KvNpbUJrSD9VQ77Gs90Cyq/1HoK/eKgvOiw+0Nrew==,
-        tarball: '@xn-sakina/meta/download/@xn-sakina/meta-1.0.2.tgz',
+        integrity: sha512-3p2B+LbArJ+N+Uvf8f4ui6+gGZAlzLawnIWN7CUhuvpqRL/pVSI7B2Har6Y9fvvcZc7arIwzxw/Y+Z8m5fbwGg==,
+        tarball: '@xn-sakina/meta/download/@xn-sakina/meta-1.0.3.tgz',
       }
     hasBin: true
-    peerDependencies:
-      core-js: 3.20.3
-      regenerator-runtime: ^0.13.9
     dependencies:
       '@babel/core': 7.16.12
       '@babel/preset-env': 7.16.11_@babel+core@7.16.12
@@ -3455,7 +3446,7 @@ packages:
       clean-webpack-plugin: 4.0.0_webpack@5.67.0
       commander: 8.3.0
       copy-webpack-plugin: 10.2.1_webpack@5.67.0
-      core-js: 3.20.0
+      core-js: 3.20.3
       css-loader: 6.5.1_webpack@5.67.0
       css-minimizer-webpack-plugin: 3.4.1_esbuild@0.14.13+webpack@5.67.0
       dotenv: 12.0.4
@@ -3477,6 +3468,7 @@ packages:
       process: 0.11.10
       react-dev-utils: 12.0.0_b4e5f145dc167aa91deeec46651f82b6
       react-refresh: 0.11.0
+      regenerator-runtime: 0.13.9
       require-from-string: 2.0.2
       sass: 1.49.0
       sass-loader: 12.4.0_sass@1.49.0+webpack@5.67.0
@@ -4036,20 +4028,6 @@ packages:
       }
     dependencies:
       object.assign: 4.1.2
-    dev: true
-
-  /babel-plugin-lodash/3.3.4:
-    resolution:
-      {
-        integrity: sha1-T2hENYoTQLrtGCrb7/qN+ZZ7wZY=,
-        tarball: babel-plugin-lodash/download/babel-plugin-lodash-3.3.4.tgz,
-      }
-    dependencies:
-      '@babel/helper-module-imports': 7.16.7
-      '@babel/types': 7.16.7
-      glob: 7.2.0
-      lodash: 4.17.21
-      require-package-name: 2.0.1
     dev: true
 
   /babel-plugin-polyfill-corejs2/0.3.1_@babel+core@7.16.12:
@@ -4864,14 +4842,14 @@ packages:
     requiresBuild: true
     dev: true
 
-  /core-js/3.20.0:
+  /core-js/3.20.3:
     resolution:
       {
-        integrity: sha512-KjbKU7UEfg4YPpskMtMXPhUKn7m/1OdTHTVjy09ScR2LVaoUXe8Jh0UdvN2EKUR6iKTJph52SJP95mAB0MnVLQ==,
-        tarball: core-js/download/core-js-3.20.0.tgz,
+        integrity: sha512-vVl8j8ph6tRS3B8qir40H7yw7voy17xL0piAjlbBUsH7WIfzoedL/ZOr1OV9FyZQLWXsayOJyV4tnRyXR85/ag==,
+        tarball: core-js/download/core-js-3.20.3.tgz,
       }
     requiresBuild: true
-    dev: false
+    dev: true
 
   /core-util-is/1.0.3:
     resolution:
@@ -9197,8 +9175,8 @@ packages:
   /path-to-regexp/0.1.7:
     resolution:
       {
-        integrity: sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=,
-        tarball: path-to-regexp/download/path-to-regexp-0.1.7.tgz?cache=0&sync_timestamp=1632822736183&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fpath-to-regexp%2Fdownload%2Fpath-to-regexp-0.1.7.tgz,
+        integrity: sha512-5DFkuoqlv1uYQKxy8omFBeJPQcdoE07Kv2sferDCrAq1ohOU+MSDswDIbnx3YAM60qIOnYa53wBhXW0EbMonrQ==,
+        tarball: path-to-regexp/download/path-to-regexp-0.1.7.tgz,
       }
     dev: true
 
@@ -10365,10 +10343,11 @@ packages:
   /process/0.11.10:
     resolution:
       {
-        integrity: sha1-czIwDoQBYb2j5podHZGn1LwW8YI=,
+        integrity: sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==,
         tarball: process/download/process-0.11.10.tgz,
       }
     engines: { node: '>= 0.6.0' }
+    dev: true
 
   /progress/2.0.3:
     resolution:
@@ -11451,8 +11430,8 @@ packages:
   /regenerator-runtime/0.13.9:
     resolution:
       {
-        integrity: sha1-iSV0Kpj/2QgUmI11Zq0wyjsmO1I=,
-        tarball: regenerator-runtime/download/regenerator-runtime-0.13.9.tgz?cache=0&sync_timestamp=1632822710900&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fregenerator-runtime%2Fdownload%2Fregenerator-runtime-0.13.9.tgz,
+        integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==,
+        tarball: regenerator-runtime/download/regenerator-runtime-0.13.9.tgz,
       }
 
   /regenerator-transform/0.14.5:
@@ -11568,14 +11547,6 @@ packages:
         tarball: require-from-string/download/require-from-string-2.0.2.tgz,
       }
     engines: { node: '>=0.10.0' }
-    dev: true
-
-  /require-package-name/2.0.1:
-    resolution:
-      {
-        integrity: sha1-wR6XJ2tluOKSP3Xav1+y7ww4Qbk=,
-        tarball: require-package-name/download/require-package-name-2.0.1.tgz,
-      }
     dev: true
 
   /requires-port/1.0.0:
@@ -13564,7 +13535,7 @@ packages:
   /yaml/1.10.2:
     resolution:
       {
-        integrity: sha1-IwHF/78StGfejaIzOkWeKeeSDks=,
+        integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==,
         tarball: yaml/download/yaml-1.10.2.tgz,
       }
     engines: { node: '>= 6' }
