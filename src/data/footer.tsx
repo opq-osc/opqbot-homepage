@@ -38,7 +38,7 @@ export const FOOTER_CONFIG: Pick<IData, 'footer'> = {
   footer: {
     license: (
       <>
-        MIT Licensed | Copyright © 2021
+        MIT Licensed | Copyright © 2022
         <br />
         <Button
           type="link"
