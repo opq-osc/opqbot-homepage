@@ -48,7 +48,7 @@
     "@types/scrollreveal": "^0.0.7",
     "@types/styled-components": "^5.1.19",
     "@typescript-eslint/parser": "^5.8.1",
-    "@xn-sakina/meta": "^1.0.3",
+    "@xn-sakina/meta": "^1.1.1",
     "chalk": "^4.1.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.6.0",

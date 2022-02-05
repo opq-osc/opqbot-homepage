@@ -12,6 +12,7 @@ export default defineConfig({
     '@hooks': resolve(__dirname, './src/hooks'),
   },
   compile: 'swc',
+  mfsu: true,
   cache: true,
   publicPath: isProd
     ? '//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/'
