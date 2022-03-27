@@ -4,17 +4,21 @@ import { resolve } from 'path'
 const isProd = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
-  alias: {
-    '@utils': resolve(__dirname, './src/utils'),
-    '@data': resolve(__dirname, './src/data'),
-    '@assets': resolve(__dirname, './src/assets'),
-    '@constants': resolve(__dirname, './src/constants'),
-    '@hooks': resolve(__dirname, './src/hooks'),
-  },
+  // FIXME: 历史遗留，太多 alias 了
+  alias: getDirAliasMap(['utils', 'data', 'assets', 'constants', 'hooks']),
   compile: 'swc',
   cssMinify: 'parcelCss',
+  jsMinify: 'esbuild',
   cache: true,
   publicPath: isProd
     ? '//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/'
     : '/',
 })
+
+function getDirAliasMap(dirs: string[]) {
+  const alias: Record<string, string> = {}
+  dirs.forEach((dir) => {
+    alias[`@${dir}`] = resolve(__dirname, `./src/${dir}`)
+  })
+  return alias
+}
