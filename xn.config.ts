@@ -11,7 +11,7 @@ export default defineConfig({
   jsMinify: 'esbuild',
   cache: true,
   publicPath: isProd
-    ? '//cdn.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/'
+    ? '//fastly.jsdelivr.net/gh/opq-osc/opqbot-homepage@gh-pages/'
     : '/',
 })
 
